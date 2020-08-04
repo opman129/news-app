@@ -126,7 +126,7 @@ const getNews = async() => {
     newsTop.innerHTML = topNews;
 
     const minNews =   `
-    <img src =${details[7].multimedia[0].url} " class = "img-fluid">
+    <img src =${details[9].multimedia[0].url} " class = "img-fluid">
    
     `
   newsMin.innerHTML = minNews;

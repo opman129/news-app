@@ -12,6 +12,7 @@ html, body {
     padding:  20px 50px !important;
     background-color: #1d1d1d !important;
     color: white !important;
+    margin-bottom: 20px;
  }
 
  .navbar-brand {
@@ -91,7 +92,7 @@ html, body {
  #show-news-image{
     margin: 0 auto;
     display: block;
-    width: 90%; 
+    width: 100%; 
  }
 
 
