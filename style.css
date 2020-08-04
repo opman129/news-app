@@ -4,9 +4,29 @@ html, body {
   
 }
 
-.navbar {
-   padding: 20px !important;
+.overall-div {
+    padding: 0 40px !important;
 }
+
+.navbar {
+    padding:  20px 50px !important;
+    background-color: #1d1d1d !important;
+    color: white !important;
+ }
+
+ .navbar-brand {
+     color: white !important;
+     font-family: "raleway";
+     font-size: 30px !important;
+ }
+
+ .navbar-nav li a{
+     color: white !important;
+     font-family: "raleway";
+     font-size: 20px !important;
+     padding: 20px !important;
+ }
+
 
 .card{
     margin-bottom: 50px ;
@@ -45,6 +65,10 @@ html, body {
     font-family: 'Raleway' !important;
 }
 
+.card-dark {
+    color: white !important;
+    background-color: black !important;
+}
 
 
 .show-news {
@@ -61,7 +85,7 @@ html, body {
  }
 
  #news-right img {
-     width: 100%;
+     width: 120%;
  }
 
  #show-news-image{

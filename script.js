@@ -64,7 +64,7 @@ const getNews = async() => {
   const left =   `
   <div class="card card-bottom">
       <img src =${details[4].multimedia[0].url} class="card-img-top image img-fluid" alt="...">
-      <div class="card-body">
+      <div class="card-body card-dark" >
         <h3 class="card-title">${details[4].title}</h3>
         <h4 class="card-text" >${details[4].abstract}</h4>
         <h6 class="card-text" style=" font-family: cursive"> ${details[4].byline}</h6>  
@@ -78,7 +78,7 @@ const getNews = async() => {
   const right =   `
   <div class="card card-bottom">
       <img src =${details[3].multimedia[0].url} class="card-img-top image img-fluid" alt="...">
-      <div class="card-body">
+      <div class="card-body card-dark"  >
         <h3 class="card-title">${details[3].title}</h3>
         <h4 class="card-text" >${details[3].abstract}</h4>
         <h6 class="card-text" style=" font-family: cursive"> ${details[3].byline}</h6> 
