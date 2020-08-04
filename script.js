@@ -13,6 +13,9 @@ const newsMiddle = document.getElementById('news-middle');
 const newsMin = document.getElementById('news-min');
 const newsMid = document.getElementById('news-mid');
 const newsMax = document.getElementById('news-max');
+const hero = document.getElementById('hero');
+const heroText = document.getElementById('hero-text');
+
 
 const getNews = async() => {
   
@@ -67,8 +70,7 @@ const getNews = async() => {
       <div class="card-body card-dark" >
         <h3 class="card-title">${details[4].title}</h3>
         <h4 class="card-text" >${details[4].abstract}</h4>
-        <h6 class="card-text" style=" font-family: cursive"> ${details[4].byline}</h6>  
-        <a href = ${details[4].url}>Continue Reading</a>    
+        <h6 class="card-text" style=" font-family: cursive"> ${details[4].byline}</h6>      
         <h6>${details[4].section}</h6>       
       </div>
     </div> 
@@ -81,8 +83,7 @@ const getNews = async() => {
       <div class="card-body card-dark"  >
         <h3 class="card-title">${details[3].title}</h3>
         <h4 class="card-text" >${details[3].abstract}</h4>
-        <h6 class="card-text" style=" font-family: cursive"> ${details[3].byline}</h6> 
-        <a href = ${details[3].url}>Continue Reading</a>     
+        <h6 class="card-text" style=" font-family: cursive"> ${details[3].byline}</h6>     
         <h6>${details[3].section}</h6>  
       </div>
     </div> 
@@ -94,6 +95,7 @@ const getNews = async() => {
       <img src =${details[6].multimedia[0].url} " class = "img-fluid">
       `
     newsRight.innerHTML = rightNews;
+
   const leftNews =   `
       <h1>${details[6].title}</h1>
       <h3>${details[6].abstract}</h3>
@@ -117,11 +119,11 @@ const getNews = async() => {
     newsMiddle.innerHTML = middleNews;
 
     const topNews =   `
-      <h1>${details[7].title}</h1>
-      <h3>${details[7].abstract}</h3>
-      <h5>${details[7].byline}</h5>
-      <h6>${details[7].published_date}</h6>
-      <h6>${details[7].section}</h6>
+      <h1>${details[11].title}</h1>
+      <h3>${details[11].abstract}</h3>
+      <h5>${details[11].byline}</h5>
+      <h6>${details[11].published_date}</h6>
+      <h6>${details[11].section}</h6>
       `
     newsTop.innerHTML = topNews;
 
@@ -137,6 +139,7 @@ const getNews = async() => {
   <h5>${details[8].byline}</h5>
   <h6>${details[8].published_date}</h6>
   <h6>${details[8].section}</h6>
+  <a href = ${details[8].url}>Continue Reading</a>
   `
 newsMid.innerHTML = midNews;
 
@@ -146,8 +149,17 @@ newsMid.innerHTML = midNews;
   <h5>${details[9].byline}</h5>
   <h6>${details[9].published_date}</h6>
   <h6>${details[9].section}</h6>
+  <a href = ${details[8].url}>Continue Reading</a>
   `
 newsMax.innerHTML = maxNews;
+
+
+const heroImage =   `
+<img src =${details[21].multimedia[0].url} " class = "img-fluid hero-img">
+
+<h1 class = "hero-text">${details[15].title}</h1>
+`
+hero.innerHTML = heroImage;
   
 }
 
