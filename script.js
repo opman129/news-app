@@ -27,7 +27,7 @@ const getNews = async() => {
                           </div>
                       </div>
                       <div class="card-footer">
-                          <small class="text-muted">Last updated 3 mins ago</small>
+                          <small>${item.byline}</small>
                       </div>
                   </div>
               </div>
