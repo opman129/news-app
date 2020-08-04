@@ -1,20 +1,79 @@
+html, body {
+    position: relative;
+    overflow-x: hidden;
+  
+}
+
+
+
 .navbar {
    padding: 20px !important;
 }
 
-.search {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    flex-direction: column; 
+.card{
+    margin-bottom: 50px ;
 }
 
-.input {
-    width: 50% !important;
+
+.card-top {
+    width: 22rem;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 50px;
+  
 }
 
-.card-horizontal {
+.card-bottom {
+    width: 70rem;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 50px;
+
+  
+}
+.card-text{
+    font-weight: 100;
+    font-family: 'Raleway' !important;
+}
+
+.card-title {
+    font-family: 'Raleway' !important;
+}
+
+
+
+.show-news {
     display: flex;
-    flex: 1 1 auto;
-}
+    flex-wrap: wrap;  
+    justify-content: space-between;
+    padding-top: 30px;
+  
+   
+    
+    
+    
+ }
+
+ .image {
+     width: 200px;
+     height: 200px;
+ }
+
+ #news-right img {
+     width: 100%;
+ }
+
+ #show-news-image{
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+   
+ }
+
+ #show-news-image h1, h3, h5, h6{
+    font-family: 'Raleway' !important;
+ }
