@@ -72,7 +72,7 @@ h1 {
        display: flex;
        flex-direction: column;
        justify-content: center;
-       margin-top: 60px !important;
+       margin-top: 55px !important;
     
      } 
 
@@ -83,7 +83,7 @@ h1 {
     }
 
     .book {
-        margin-bottom: 50px !important;
+        margin-bottom: 40px !important;
     }
 
     h1 {
@@ -92,5 +92,7 @@ h1 {
         font-size: 30px !important;
         
     }
+
+   
 
  }
