@@ -22,10 +22,12 @@ const getBooks = async () => {
           <div class="col-md-6 col-sm-12 book-text no-padding">
           <h1>Title: ${item.title}</h1>
           <h3>Rank: ${item.rank}</h3>
-          <h4>Author: ${item.author}</h4>
-          <h5>Description: ${item.description}</h5>
+          <h4>Author: ${item.author}</h4><br>
+          <h5>Description: ${item.description}</h5><br>
           <h6>Publisher: ${item.publisher}</h6>
           <h6>ISBN: ${item.isbns[0].isbn10}</h6>
+          <h6>Rank Last Week: ${item.rank_last_week}</h6>
+          <h6>Weeks on List: ${item.weeks_on_list}</h6><br>
           <div class = "stores">
             <div class = "amazon">
                 <a href = ${item.buy_links[0].url}><i class="fab fa-amazon"></i>Amazon Books</a>
@@ -41,7 +43,7 @@ const getBooks = async () => {
           </div>
           </div>
       </div>
-  </div>
+  </div><hr><br><br>
       
       `
   }).join('')

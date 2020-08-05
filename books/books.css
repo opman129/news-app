@@ -44,14 +44,6 @@ html, body {
      margin-bottom: 70px;
  }
 
- .book-text {
-    display: flex;
-    flex-direction: column;
-   justify-content: center;
-    height: 50vh;
-
- } 
-
  .book-text h1, h2, h3, h4, h5, h6{
      font-family: 'raleway';
  }
@@ -71,6 +63,9 @@ h1 {
     height: 450px;
 }
 
+hr {
+    margin-bottom: 20px !important;
+}
 
  @media(max-width: 767px){
     .book-text {
@@ -82,9 +77,9 @@ h1 {
      } 
 
      .stores a {
-        padding: 6px;
+        padding: 4px;
         color: teal;
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .book {

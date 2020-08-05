@@ -21,8 +21,6 @@ const leftCard = document.getElementById('left-card');
 const bottomLeftCard = document.getElementById('bottomleft-card');
 const rightCard = document.getElementById('right-card');
 
-// https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=OtN5TgEakuRqnuUsHHxWTfMISpfrrAV7
-
 
 const getNews = async() => {
     const res = await fetch(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=OtN5TgEakuRqnuUsHHxWTfMISpfrrAV7
@@ -171,7 +169,7 @@ const heroImage =   `
 hero.innerHTML = heroImage;
 
 const cardLeft = `
-<div class="card" style="width: 100%;">
+<div class="card" style="width: 100%; height: 48rem">
   <img src =${details[16].multimedia[0].url}  class="card-img-top card-img img-fluid" alt="...">
   <div class="card-body">
     <h5 class="card-title">${details[16].title}</h5>
@@ -185,7 +183,7 @@ leftCard.innerHTML = cardLeft;
 
 const cardTop = `
 <div class="card height">
-  <div class="card-body  card-dark text-info">
+  <div class="card-body bg-light text-info">
     <h5 class="card-title">${details[17].title}</h5>
     <p class="card-text">${details[17].abstract}.</p>
     <a href=${details[17].url} class="card-link">Continue</a> 
@@ -196,7 +194,7 @@ topCard.innerHTML = cardTop;
 
 const cardBottom = `
 <div class="card height" >
-  <div class="card-body card-dark text-danger">
+  <div class="card-body bg-light text-danger">
     <h5 class="card-title">${details[18].title}</h5>
     <p class="card-text">${details[18].abstract}.</p>
     <a href=${details[18].url} class="card-link">Continue</a>
@@ -207,7 +205,7 @@ bottomCard.innerHTML = cardBottom;
 
 const cardLeftBottom = `
 <div class="card height">
-  <div class="card-body card-dark text-info">
+  <div class="card-body bg-light text-info">
     <h5 class="card-title ">${details[19].title}</h5>
     <p class="card-text">${details[19].abstract}.</p>
     <a href=${details[19].url} class="card-link">Continue</a>
@@ -218,7 +216,7 @@ bottomLeftCard.innerHTML = cardLeftBottom;
 
 const cardRight = `
 <div class="card height">
-  <div class="card-body card-dark text-danger">
+  <div class="card-body bg-light text-danger">
     <h5 class="card-title">${details[20].title}</h5>
     <p class="card-text">${details[20].abstract}.</p>
     <a href=${details[20].url} class="card-link">Continue</a>
