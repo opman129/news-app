@@ -29,7 +29,9 @@ html, body {
 
 
 .card{
-    margin-bottom: 50px ;
+    margin-bottom: 50px;
+    
+
 }
 
 .logo {
@@ -204,6 +206,10 @@ footer {
   
   .copy h6 {
     font-size: 10px;
+  }
+
+  .top-card, .bottom-card, .bottomleft-card, .right-card {
+      border-right: 5px solid maroon;
   }
 
  @media(max-width: 767px){

@@ -25,10 +25,11 @@ const getMovie = async() => {
        <div class="container-fluid">
             <div class="row">
               <div class="col-12 mt-3">
-                <div class="card bg-light" style="width: 80%;">
+                <div class="card bg-dark text-light" style="width: 80%;">
                 <div class="card-body">
                   <h5 class="card-title">${item.display_title}</h5>         
                   <p class="card-text">${item.headline}</p>
+                  <p class="card-text">${item.summary_short}</p>
                   <a href= ${item.link.url} class="card-link">Read More..</a>   
                 </div>
             </div>

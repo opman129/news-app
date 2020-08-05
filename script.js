@@ -183,7 +183,7 @@ leftCard.innerHTML = cardLeft;
 
 const cardTop = `
 <div class="card height">
-  <div class="card-body  bg-dark text-info">
+  <div class="card-body  card-dark text-info">
     <h5 class="card-title">${details[17].title}</h5>
     <p class="card-text">${details[17].abstract}.</p>
     <a href=${details[17].url} class="card-link">Continue</a> 
@@ -205,7 +205,7 @@ bottomCard.innerHTML = cardBottom;
 
 const cardLeftBottom = `
 <div class="card height">
-  <div class="card-body bg-dark text-info">
+  <div class="card-body card-dark text-info">
     <h5 class="card-title ">${details[19].title}</h5>
     <p class="card-text">${details[19].abstract}.</p>
     <a href=${details[19].url} class="card-link">Continue</a>
@@ -216,7 +216,7 @@ bottomLeftCard.innerHTML = cardLeftBottom;
 
 const cardRight = `
 <div class="card height">
-  <div class="card-body card-dark text-info">
+  <div class="card-body card-dark text-danger">
     <h5 class="card-title">${details[20].title}</h5>
     <p class="card-text">${details[20].abstract}.</p>
     <a href=${details[20].url} class="card-link">Continue</a>
