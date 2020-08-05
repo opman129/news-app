@@ -105,15 +105,13 @@ html, body {
      width: 100% !important;
      padding: 0px !important;
      margin: 0px !important;
-     
-    
  }
 
  .hero-img {
      position: relative; 
      height: 700px !important;
      width: 100%;
-     margin-bottom: 100px;
+     margin-bottom: 50px;
  }
 
  .hero-text {
@@ -155,19 +153,20 @@ footer {
   }
   
   .email-footer input {
-    width: 280px;
+    width: 200px;
     padding: 15px;
     border: 1px solid white;
     background-color: #162838;
     color: white;
   }
   .email-footer button {
-    width: 150px;
+    width: 80px;
     background-color: #e52992;
-    padding: 15px;
+    padding: 10px;
     border: none;
     color: white;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 10px;
   }
 
   
@@ -214,6 +213,11 @@ footer {
      #news-min, #news-mid, #news-max {
          padding-bottom: 30px !important;
      }
+     #news-bottom, #news-middle, #news-top {
+         padding-bottom: 30px !important;
+     }
+
+
      #bottom-left{
         margin-bottom: 30px !important;
     }
