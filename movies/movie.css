@@ -1,0 +1,62 @@
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.navbar {
+    padding:  15px 50px !important;
+    background-color: #1d1d1d !important;
+    color: white !important;
+    margin-bottom: 40px;
+    
+ }
+
+ .navbar-brand {
+     color: white !important;
+     font-family: "raleway";
+     font-size: 30px !important;
+ }
+
+ .navbar-nav li a{
+     color: white !important;
+     font-family: "raleway";
+     font-size: 20px !important;
+     padding: 20px !important;
+ }
+
+.card {
+    margin: 0 auto;
+
+}
+.search-bar {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column;
+  
+}
+.text-light{
+    font-family: "raleway";
+}
+
+.search-bar input {
+    width: 400px !important;
+    padding: 8px;
+    border-radius: 8px;
+    font-family: "raleway";
+    border: 1px solid grey;
+
+}
+
+.fas {
+    font-size: 30px;
+    color: maroon;
+    
+  
+}
+
+.show-movies h5 {
+    font-size: 30px !important;
+    font-family: 'raleway';
+    font-weight: bolder !important;
+}
