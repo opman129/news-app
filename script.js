@@ -21,6 +21,8 @@ const leftCard = document.getElementById('left-card');
 const bottomLeftCard = document.getElementById('bottomleft-card');
 const rightCard = document.getElementById('right-card');
 
+// https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=OtN5TgEakuRqnuUsHHxWTfMISpfrrAV7
+
 
 const getNews = async() => {
     const res = await fetch(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=OtN5TgEakuRqnuUsHHxWTfMISpfrrAV7
