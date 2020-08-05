@@ -15,10 +15,14 @@ const newsMid = document.getElementById('news-mid');
 const newsMax = document.getElementById('news-max');
 const hero = document.getElementById('hero');
 const heroText = document.getElementById('hero-text');
+const topCard = document.getElementById('top-card');
+const bottomCard = document.getElementById('bottom-card');
+const leftCard = document.getElementById('left-card');
+const bottomLeftCard = document.getElementById('bottomleft-card');
+const rightCard = document.getElementById('right-card');
 
 
 const getNews = async() => {
-  
     const res = await fetch(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=OtN5TgEakuRqnuUsHHxWTfMISpfrrAV7
     `)
     let data = await res.json();
@@ -37,6 +41,7 @@ const getNews = async() => {
     `
   showNews1.innerHTML = show1;
 
+
   const show2 =   `
   <div class="card card-top">
       <img src =${details[1].multimedia[0].url} class="card-img-top image img-fluid" alt="...">
@@ -47,8 +52,7 @@ const getNews = async() => {
       </div>
     </div> 
       `
-
-    showNews2.innerHTML = show2;
+  showNews2.innerHTML = show2;
 
 
   const show3 =   `
@@ -75,7 +79,7 @@ const getNews = async() => {
       </div>
     </div> 
       `
-    bottomLeft.innerHTML = left;
+  bottomLeft.innerHTML = left;
 
   const right =   `
   <div class="card card-bottom">
@@ -88,7 +92,6 @@ const getNews = async() => {
       </div>
     </div> 
       `
-
   bottomRight.innerHTML = right;
 
   const rightNews =   `
@@ -101,7 +104,14 @@ const getNews = async() => {
       <h3>${details[6].abstract}</h3>
       <h5>${details[6].byline}</h5>
       <h6>${details[6].published_date}</h6>
-      <h6>${details[6].section}</h6>  `
+      <h6>${details[6].section}</h6><br> 
+
+      <h1>${details[23].title}</h1>
+      <h3>${details[23].abstract}</h3>
+      <h5>${details[23].byline}</h5>
+      <h6>${details[23].published_date}</h6>
+      <h6>${details[23].section}</h6> ` 
+     
     newsLeft.innerHTML = leftNews;
 
   const bottomNews =   `
@@ -119,11 +129,11 @@ const getNews = async() => {
     newsMiddle.innerHTML = middleNews;
 
     const topNews =   `
-      <h1>${details[11].title}</h1>
-      <h3>${details[11].abstract}</h3>
-      <h5>${details[11].byline}</h5>
-      <h6>${details[11].published_date}</h6>
-      <h6>${details[11].section}</h6>
+     <h1>${details[11].title}</h1>
+     <h3>${details[11].abstract}</h3>
+     <h5>${details[11].byline}</h5>
+     <h6>${details[11].published_date}</h6>
+     <h6>${details[11].section}</h6>
       `
     newsTop.innerHTML = topNews;
 
@@ -153,14 +163,67 @@ newsMid.innerHTML = midNews;
   `
 newsMax.innerHTML = maxNews;
 
-
 const heroImage =   `
-<img src =${details[21].multimedia[0].url} " class = "img-fluid hero-img">
-
-<h1 class = "hero-text">${details[15].title}</h1>
+<img src =${details[1].multimedia[0].url} " class = "img-fluid hero-img">
 `
 hero.innerHTML = heroImage;
-  
+
+const cardLeft = `
+<div class="card" style="width: 100%;">
+  <img src =${details[16].multimedia[0].url}  class="card-img-top card-img img-fluid" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">${details[16].title}</h5>
+    <p class="card-text">${details[16].abstract}.</p>
+    <a href=${details[16].url} class="card-link">Continue</a>
+  </div>
+</div>
+`
+leftCard.innerHTML = cardLeft;
+
+
+const cardTop = `
+<div class="card height">
+  <div class="card-body">
+    <h5 class="card-title">${details[17].title}</h5>
+    <p class="card-text">${details[17].abstract}.</p>
+    <a href=${details[17].url} class="card-link">Continue</a> 
+  </div>
+</div>
+`
+topCard.innerHTML = cardTop;
+
+const cardBottom = `
+<div class="card height" >
+  <div class="card-body">
+    <h5 class="card-title">${details[18].title}</h5>
+    <p class="card-text">${details[18].abstract}.</p>
+    <a href=${details[18].url} class="card-link">Continue</a>
+  </div>
+</div>
+`
+bottomCard.innerHTML = cardBottom;
+
+const cardLeftBottom = `
+<div class="card height">
+  <div class="card-body">
+    <h5 class="card-title">${details[19].title}</h5>
+    <p class="card-text">${details[19].abstract}.</p>
+    <a href=${details[19].url} class="card-link">Continue</a>
+  </div>
+</div>
+`
+bottomLeftCard.innerHTML = cardLeftBottom;
+
+const cardRight = `
+<div class="card height">
+  <div class="card-body">
+    <h5 class="card-title">${details[20].title}</h5>
+    <p class="card-text">${details[20].abstract}.</p>
+    <a href=${details[20].url} class="card-link">Continue</a>
+  </div>
+</div>
+`
+rightCard.innerHTML = cardRight;  
 }
 
 window.addEventListener('DOMContentLoaded', getNews)
