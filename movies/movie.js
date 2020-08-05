@@ -29,6 +29,8 @@ const getMovie = async() => {
         </div>
        `  
    }).join('')
+
+   
    showMovies.innerHTML = movies 
 }
 
