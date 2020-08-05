@@ -2,16 +2,6 @@ const input = document.getElementById('input')
 const search = document.getElementById('search')
 const showMovies = document.getElementById('show-movies')
 
-
-
-
-
-
-
-
-
-
-
 const getMovie = async() => {
    const response = await fetch(`https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=${input.value}&api-key=OtN5TgEakuRqnuUsHHxWTfMISpfrrAV7`)
 
@@ -37,15 +27,9 @@ const getMovie = async() => {
                  </div>
              </div>
         </div>
-  
-       `
-      
+       `  
    }).join('')
-   showMovies.innerHTML = movies
-  
+   showMovies.innerHTML = movies 
 }
-
-
-
 
 search.addEventListener('click', getMovie)
