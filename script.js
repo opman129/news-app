@@ -37,7 +37,7 @@ const getNews = async() => {
       <h4 class="card-text" >${details[0].abstract}</h4>
       <h6 class="card-text" style=" font-family: cursive"> ${details[0].byline}</h6>       
     </div>
-  </div> 
+</div> 
     `
   showNews1.innerHTML = show1;
 
@@ -50,7 +50,7 @@ const getNews = async() => {
         <h4 class="card-text" >${details[1].abstract}</h4>
         <h6 class="card-text" style=" font-family: cursive"> ${details[1].byline}</h6>     
       </div>
-    </div> 
+  </div> 
       `
   showNews2.innerHTML = show2;
 
@@ -63,13 +63,13 @@ const getNews = async() => {
       <h4 class="card-text" >${details[2].abstract}</h4>
       <h6 class="card-text" style=" font-family: cursive"> ${details[2].byline}</h6>          
     </div>
-  </div> 
+</div> 
     `
   showNews3.innerHTML = show3;
 
 
   const left =   `
-  <div class="card card-bottom">
+<div class="card card-bottom">
       <img src =${details[4].multimedia[0].url} class="card-img-top image img-fluid" alt="..." style = "height: 400px">
       <div class="card-body card-dark" >
         <h3 class="card-title">${details[4].title}</h3>
@@ -77,7 +77,7 @@ const getNews = async() => {
         <h6 class="card-text" style=" font-family: cursive"> ${details[4].byline}</h6>      
         <h6>${details[4].section}</h6>       
       </div>
-    </div> 
+</div> 
       `
   bottomLeft.innerHTML = left;
 

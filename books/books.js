@@ -36,10 +36,7 @@ const getBooks = async () => {
             <div class = "apple">
                  <a href = ${item.buy_links[1].url}><i class="fab fa-apple"></i>Apple Books</a> 
             </div>
-            <div class = "barnes">
-                 <a href = ${item.buy_links[2].url}><i class="fas fa-book"></i>Barnes and Noble</a> 
-            </div>
-          
+           
           </div>
           </div>
       </div>

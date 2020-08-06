@@ -2,6 +2,7 @@ html, body {
     position: relative;
     overflow-x: hidden;
 }
+
 .navbar {
     padding:  15px 50px !important;
     background-color: #1d1d1d !important;
@@ -30,9 +31,11 @@ html, body {
  }
 
  .stores a {
-     padding: 10px;
+     padding: 8px;
      color: teal;
+     
  }
+ 
 
  .stores a:hover {
      text-decoration: none;
